@@ -1,4 +1,5 @@
 const express = require('express')
+const cookieParser = require('cookie-parser')
 const morgan = require('morgan')
 
 // Custom Module Imports
@@ -13,6 +14,7 @@ const app = express()
 
 // Initialize middlewares
 app.use(express.json())
+app.use(cookieParser())
 app.use(morgan('dev'))
 
 // Initialize Routes

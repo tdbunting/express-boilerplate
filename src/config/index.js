@@ -10,6 +10,9 @@ const configOptions = {
   HOST: Joi.string().required().default('0.0.0.0'),
   PORT: Joi.number().required().default(3000),
   APP_SECRET: Joi.string().required(),
+  JWT_SECRET: Joi.string().required(),
+  JWT_EXPIRE: Joi.string().required().default('30d'),
+  JWT_COOKIE_EXPIRE: Joi.number().required().default('30'),
   // MONGO CONFIG
   MONGO_DB_NAME: Joi.string().required(),
   MONGO_DB_HOST: Joi.string(),
