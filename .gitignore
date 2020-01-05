@@ -1,0 +1,15 @@
+# logs
+*.log
+npm-debug.log*
+
+# dependency directories
+node_modules
+
+# env variables
+.env
+
+# editor settings
+.vscode/
+
+# mongo data
+data

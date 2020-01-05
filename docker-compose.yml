@@ -1,0 +1,35 @@
+version: "3.7"
+services:
+  node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app/
+      - /app/node_modules
+    environment:
+      - MONGO_DOCKER_HOST=mongo:27017
+    depends_on:
+      - mongo
+      - redis
+    command: npm start
+    networks:
+      - app-network
+  mongo:
+    container_name: mongodb
+    image: mongo:latest
+    volumes:
+      - ./data/db:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - app-network
+  redis:
+    image: redis
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge
