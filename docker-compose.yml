@@ -13,7 +13,6 @@ services:
       - MONGO_DOCKER_HOST=mongo:27017
     depends_on:
       - mongo
-      - redis
     command: npm start
     networks:
       - app-network
@@ -24,10 +23,6 @@ services:
       - ./data/db:/data/db
     ports:
       - "27017:27017"
-    networks:
-      - app-network
-  redis:
-    image: redis
     networks:
       - app-network
 networks:
