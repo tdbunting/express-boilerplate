@@ -11,7 +11,12 @@
     "start": "node ./src/server.js",
     "dev": "nodemon ./src/server.js"
   },
-  "keywords": ["express", "boilerplate", "auth", "api"],
+  "keywords": [
+    "express",
+    "boilerplate",
+    "auth",
+    "api"
+  ],
   "author": "Tyler Bunting",
   "license": "MIT",
   "devDependencies": {
