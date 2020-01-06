@@ -1,9 +1,9 @@
 version: "3.7"
 services:
-  node:
+  api_server:
     build:
       context: .
-      dockerfile: Dockerfile
+      target: server
     ports:
       - "3000:3000"
     volumes:

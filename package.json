@@ -2,14 +2,18 @@
   "name": "express-boilerplate",
   "version": "1.0.0",
   "description": "A simple express api boilerplate with basic authentication",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tdbunting/express-boilerplate.git"
+  },
   "main": "src/server.js",
   "scripts": {
     "start": "node ./src/server.js",
     "dev": "nodemon ./src/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["express", "boilerplate", "auth", "api"],
+  "author": "Tyler Bunting",
+  "license": "MIT",
   "devDependencies": {
     "nodemon": "^2.0.2"
   },
