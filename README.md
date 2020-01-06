@@ -22,5 +22,15 @@ npm run dev
 npm start
 ```
 
+## Run With Docker
+If you have docker installed:
+```
+# Build docker image
+docker-compose build
+
+# Run 
+docker-compose up
+```
+
 - Version: 1.0.0
 - License: MIT
