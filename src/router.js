@@ -1,7 +1,7 @@
 const { Router } = require('express')
 
 // All router imports
-const authRouter = require('./auth.router')
+const authRouter = require('./routes/auth.router')
 
 // To hold all routes for api v1
 const v1ApiRouter = new Router()
@@ -15,7 +15,7 @@ appRouter.get('/', (req, res, next) => {
     data: 'Hello World'
   })
 })
-appRouter.use('/v1/api', v1ApiRouter)
+appRouter.use('/api/v1', v1ApiRouter)
 
 
 

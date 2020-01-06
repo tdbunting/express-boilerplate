@@ -3,7 +3,7 @@ const cookieParser = require('cookie-parser')
 const morgan = require('morgan')
 
 // Custom Module Imports
-const router = require('./routes')
+const router = require('./router')
 const errorHandler = require('./middlewares/errorHandler')
 
 // Initialize db instance
