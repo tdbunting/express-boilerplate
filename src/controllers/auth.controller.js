@@ -2,7 +2,7 @@ const config = require('../config/keys')
 const User = require('../models/User')
 const asyncHandler = require('../middlewares/asyncHandler')
 const ErrorResponse = require('../utils/ErrorResponse')
-const { hashToken } = require('../utils/tokens')
+const { hashToken } = require('../utils/cryptoTokens')
 
 // @desc    Register user
 // @route   POST /api/v1/auth/register
