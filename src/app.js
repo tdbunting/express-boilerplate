@@ -7,7 +7,7 @@ const router = require('./routes')
 const errorHandler = require('./middlewares/errorHandler')
 
 // Initialize db instance
-require('./db')
+require('./config/db')
 
 // Create app instance
 const app = express()
@@ -15,7 +15,10 @@ const app = express()
 // Initialize middlewares
 app.use(express.json())
 app.use(cookieParser())
-app.use(morgan('dev'))
+
+if(process.env.NODE_ENV === 'development') {
+  app.use(morgan('dev'))
+}
 
 // Initialize Routes
 app.use(router)

@@ -1,5 +1,5 @@
 const config = require('../config')
-const User = require('../db/User')
+const User = require('../models/User')
 const asyncHandler = require('../middlewares/asyncHandler')
 const ErrorResponse = require('../utils/ErrorResponse')
 const { hashToken } = require('../utils/tokens')
