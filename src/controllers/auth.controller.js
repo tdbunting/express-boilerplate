@@ -1,4 +1,4 @@
-const config = require('../config')
+const config = require('../config/keys')
 const User = require('../models/User')
 const asyncHandler = require('../middlewares/asyncHandler')
 const ErrorResponse = require('../utils/ErrorResponse')

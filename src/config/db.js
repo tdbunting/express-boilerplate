@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const config = require('.')
+const config = require('./keys')
 
 const mongoDbHost = config.MONGO_DOCKER_HOST || config.MONGO_DB_HOST || 'localhost:27017'
 

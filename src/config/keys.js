@@ -14,6 +14,7 @@ const configOptions = {
   JWT_EXPIRE: Joi.string().required().default('30d'),
   JWT_COOKIE_EXPIRE: Joi.number().required().default('30'),
   // MONGO CONFIG
+  // TODO: SEPERATE FOR TEST ENV
   MONGO_DB_NAME: Joi.string().required(),
   MONGO_DB_HOST: Joi.string(),
   MONGO_DOCKER_HOST: Joi.string()
